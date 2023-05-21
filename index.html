@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <img src="logo.png" id="logo" alt="website logo">
+        <span>Unit Converter</span>
+    </header>
+
+    <!-- errors -->
+    <p id="errors"></p>
+
+    <!-- content -->
+    <div class="card">
+        <div class="hero">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="convertInput" pattern="[0-9]" min="0" value="0">
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div class="results-container">
+            <div class="result-card">
+                <h3 class="result-title">Length (Meter/Feet)</h3>
+                <p id="meter-feet">waiting for your input</p>
+            </div>
+            <div class="result-card">
+                <h3 class="result-title">Volume (Liters/Gallons)</h3>
+                <p id="liter-gallon">waiting for your input</p>
+            </div>
+            <div class="result-card">
+                <h3 class="result-title">Mass (Kilograms/Pounds)</h3>
+                <p id="kilo-pound">waiting for your input</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        Developed by <span><a href="https://github.com/yawayeb" target="_blank">Adu B. Nana Yaw</a></span>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
